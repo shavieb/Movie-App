@@ -28,4 +28,4 @@ A stylish web app that lets you search movies, series, or episodes using the OMD
 
 ## 📦 How to Use
 
-Visit: (https://shavieb.github.io/movie-app)
+Visit: (https://shavieb.github.io/Movie-App)
