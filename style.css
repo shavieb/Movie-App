@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  color: #00ffc8;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ffc8;
+}
+
+/* Control Bars */
+.controls,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Unified Input & Button Styling */
+.controls input,
+.filters input,
+.filters select,
+.controls button,
+.filters button {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  transition: 0.3s ease;
+}
+
+button {
+  background: #00ffc8;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #00c1a0;
+}
+
+/* Movie Card Layout */
+#movieResult {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Movie Card Styles */
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffc8;
+  margin-bottom: 15px;
+}
+
+.movie-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+  color: #00ffc8;
+}
+
+.movie-card p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Loader Animation */
+#loader {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #00ffc8;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #cc0000;
+}
+
+.movie-card.removing {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #00c1a0;
+}
