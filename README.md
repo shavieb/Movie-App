@@ -28,6 +28,4 @@ A stylish web app that lets you search movies, series, or episodes using the OMD
 
 ## 📦 How to Use
 
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com/shavieb/movie-app.git
+Visit: (https://shavieb.github.io/movie-app)
